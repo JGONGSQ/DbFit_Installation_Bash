@@ -55,6 +55,7 @@ chkconfig --add fitnesse
 # if not need to open the 8085 port by:
 # `firewall-cmd --permanent --add-service=http`
 # `firewall-cmd --permanent --add-port=8085/tcp`
+# `firewall-cmd --reload`
 
 # lastly, start the fitness service
 # `service fitnesse start` 
