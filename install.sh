@@ -19,7 +19,7 @@ sudo groupadd fitnesse
 sudo useradd -g fitnesse fitnesse
 
 # create the dir: fitnesse
-mkdir /usr/share/fitnesse
+mkdir -p /usr/share/fitnesse
 
 # cp the plugins.properties to the fitnesse dir
 cp /home/$USERNAME/plugins.properties /usr/share/fitnesse/
@@ -33,12 +33,12 @@ chown --recursive fitnesse:fitnesse /usr/share/fitnesse
 
 
 # create the lib folder
-mkdir /var/lib/fitnesse
+mkdir -p /var/lib/fitnesse
 cp /home/$USERNAME/lib/*.jar /var/lib/fitnesse
 chown --recursive fitnesse:fitnesse /var/lib/fitnesse
 
 # create the log folder
-mkdir /var/log/fitnesse
+mkdir -p /var/log/fitnesse
 chown --recursive fitnesse:fitnesse /var/log/fitnesse
 
 # Make a symbolic link in /etc/init.d
